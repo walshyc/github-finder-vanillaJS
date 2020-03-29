@@ -7,10 +7,34 @@
       rel="stylesheet"
       href="https://bootswatch.com/4/superhero/bootstrap.min.css"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
+
     <title>Github Finder</title>
   </head>
   <body>
-      
+    <nav class="navbar navbar-dark bg-primary mb-3">
+      <div class="container">
+        <a href="#" class="navbar-brand"><i class="fab fa-github"></i> Github Finder</a>
+      </div>
+    </nav>
+    <div class="container searchContainer">
+      <div class="search card card-body">
+        <h1>Search <i class="fab fa-github"></i> GitHub Users</h1>
+        <p class="lead">Enter a username to fetch a user profile and repos</p>
+        <input
+          type="text"
+          name="searchUser"
+          id="searchUser"
+          class="form-control"
+          placeholder="GitHub Username"
+        />
+      </div>
+      <br />
+      <div id="profile"></div>
+    </div>
+    <footer class="mt-5 p-3 text-center bg-dark">
+      GitHub Finder &copy;
+    </footer>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
